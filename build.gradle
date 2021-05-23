@@ -11,16 +11,15 @@ def junitVersion = "5.7.1",
     allureVersion = "2.13.8",
     selenideVersion = "5.21.0"
 
-allure
-        {
-            version = allureVersion
-            autoconfigure = true
-            aspectjweaver = true
-            configuration = "testImplementation"
-            useJUnit5 {
-                version = allureVersion
-            }
-        }
+allure {
+    version = allureVersion
+    autoconfigure = true
+    aspectjweaver = true
+    configuration = "testImplementation"
+    useJUnit5 {
+        version = allureVersion
+    }
+}
 
 dependencies {
     testImplementation(
